@@ -47,7 +47,7 @@ conflicts=(
 )
 _commit="02ba4ddd1da12bbc86ed462e6f3a9f0d171b1678"
 source=(
-  "${url}/archive/${_commit}.zip"
+  "${_pkg}-${_commit}::${url}/archive/${_commit}.zip"
   # Release tarball - never released one
   # "${url}/archive/v${pkgver}/${_pkg}-${pkgver}.tar.gz"
 )
@@ -57,7 +57,7 @@ b2sums=(
 
 build() {
   cd \
-    "${_pkg}-${pkgver}"
+    "${_pkg}-${_commit}"
   python \
     -m \
       build \
@@ -67,7 +67,7 @@ build() {
 
 package() {
   cd \
-    "${_pkg}-${pkgver}"
+    "${_pkg}-${_commit}"
   "${_py}" \
     -m \
       installer \
