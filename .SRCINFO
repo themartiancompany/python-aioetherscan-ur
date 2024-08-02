@@ -1,0 +1,23 @@
+pkgbase = python-aioetherscan
+	pkgdesc = Etherscan API async Python wrapper.
+	pkgver = 0.9.4
+	pkgrel = 1
+	url = https://github.com/ape364/aioetherscan
+	arch = any
+	license = MIT
+	checkdepends = python-pytest>=8.2.2
+	checkdepends = python-pytest-asyncio>=0.23.7
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-poetry-core
+	makedepends = python-wheel
+	depends = python>=3.9
+	depends = python-aiohttp>=3.4
+	depends = python-asyncio_throttle>=1.0.1
+	depends = python-aiohttp-retry>=2.8.3
+	provides = aioetherscan=0.9.4
+	conflicts = aioetherscan
+	source = https://github.com/ape364/aioetherscan/archive/02ba4ddd1da12bbc86ed462e6f3a9f0d171b1678.zip
+	b2sums = 044b69d3e38e50012dbe3253477af7e8649d2cae3993646a6e4ad12900c0e69fc90cb4b9b13b56daea9783a1869a855aaeee9dd260ee0cefb11c0ce76d446430
+
+pkgname = python-aioetherscan
