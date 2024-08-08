@@ -13,7 +13,7 @@ pkgbase = python-aioetherscan
 	makedepends = python-wheel
 	depends = python>=3.9
 	depends = python-aiohttp>=3.4
-	depends = python-asyncio_throttle>=1.0.1
+	depends = python-asyncio-throttle>=1.0.1
 	depends = python-aiohttp-retry>=2.8.3
 	provides = aioetherscan=0.9.4
 	conflicts = aioetherscan

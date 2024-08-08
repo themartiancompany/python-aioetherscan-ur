@@ -29,7 +29,7 @@ license=(
 depends=(
   "${_py}>=3.9"
   "${_py}-aiohttp>=3.4"
-  "${_py}-asyncio_throttle>=1.0.1"
+  "${_py}-asyncio-throttle>=1.0.1"
   "${_py}-aiohttp-retry>=2.8.3"
 )
 makedepends=(
@@ -58,11 +58,13 @@ b2sums=(
 build() {
   cd \
     "${_pkg}-${_commit}"
-  python \
-    -m \
-      build \
-    --wheel \
-    --no-isolation
+  poetry \
+    build
+  # python \
+  #   -m \
+  #     build \
+  #   --wheel \
+  #   --no-isolation
 }
 
 package() {
