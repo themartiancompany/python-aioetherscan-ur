@@ -33,7 +33,11 @@ depends=(
   "${_py}-aiohttp-retry>=2.8.3"
 )
 makedepends=(
-  "${_py}-"{build,installer,poetry-core,wheel}
+  "${_py}-build"
+  "${_py}-installer"
+  "${_py}-poetry"
+  "${_py}-poetry-core"
+  "${_py}-wheel"
 )
 checkdepends=(
   "${_py}-pytest>=8.2.2"
