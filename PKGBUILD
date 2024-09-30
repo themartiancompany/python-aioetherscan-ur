@@ -11,7 +11,8 @@ pkgbase="${_py}-${_pkg}"
 pkgname=(
   "${pkgbase}"
 )
-pkgver=0.9.4
+pkgver=0.9.5.1
+_commit="9efbb8f550dedb92424cec7d213e3c556d33cf96"
 pkgrel=1
 _pkgdesc=(
   'Etherscan API async Python wrapper.'
@@ -20,7 +21,8 @@ pkgdesc="${_pkgdesc[*]}"
 arch=(
   any
 )
-_ns="ape364"
+# _ns="ape364"
+_ns="themartiancompany"
 _http="https://github.com"
 url="${_http}/${_ns}/${_pkg}"
 license=(
@@ -49,14 +51,16 @@ provides=(
 conflicts=(
   "${_pkg}"
 )
-_commit="02ba4ddd1da12bbc86ed462e6f3a9f0d171b1678"
 source=(
   "${_pkg}-${_commit}::${url}/archive/${_commit}.zip"
   # Release tarball - never released one
   # "${url}/archive/v${pkgver}/${_pkg}-${pkgver}.tar.gz"
 )
+sha256sum=(
+  'a2010c4430264e359bb3c47315f38dfa94efda90c5cd6a6eac2d7010b78fe61e'
+)
 b2sums=(
-  '044b69d3e38e50012dbe3253477af7e8649d2cae3993646a6e4ad12900c0e69fc90cb4b9b13b56daea9783a1869a855aaeee9dd260ee0cefb11c0ce76d446430'
+  'ef04d8bebe7428fb8df36e9173268cc162a5b9311f53134369e0d80b7d21f9889fb2ef5844a9075065a46d60dcad9d98a32de8fc013c015de6af5c5f92196526'
 )
 
 build() {
