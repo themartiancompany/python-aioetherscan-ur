@@ -46,6 +46,10 @@ if [[ "${_os}" == "Android" ]]; then
   _c_compiler="clang"
 elif [[ "${_os}" == "GNU/Linux" ]]; then
   _c_compiler="gcc"
+elif [[ "${_os}" == "Msys" ]]; then
+  _c_compiler="gcc"
+else
+  _c_compiler="gcc"
 fi
 if [[ ! -v "_git" ]]; then
   _git="false"
@@ -98,7 +102,7 @@ _commit="23dbbba312f7938b2d6250af4da4d9b7276788f1"
 _asyncio_throttle_pkgver="1.0.1"
 _aiohttp_retry_pkgver="2.8.3"
 _py_pkgver="3.9"
-pkgrel=13
+pkgrel=14
 _pkgdesc=(
   'Etherscan API async Python wrapper.'
 )
