@@ -958,9 +958,9 @@ jobs:
             ${{ github.event.release.upload_url }}
             # ${{ steps.create_release.outputs.upload_url }}
           asset_path:
-            "python-aiohttp-retry-${{ steps.version.outputs.version }}-${{ matrix.architecture }}.pkg.tar.xz"
+            "python-aioetherscan-${{ steps.version.outputs.version }}-${{ matrix.architecture }}.pkg.tar.xz"
           asset_name:
-            "dogeos-android-python-aiohttp-retry-${{ steps.version.outputs.version }}-${{ matrix.architecture }}.pkg.tar.xz"
+            "dogeos-android-python-aioetherscan-${{ steps.version.outputs.version }}-${{ matrix.architecture }}.pkg.tar.xz"
           asset_content_type:
             application/gzip
   arch_release:
@@ -1672,9 +1672,9 @@ jobs:
             ${{ github.event.release.upload_url }}
             # ${{ steps.create_release.outputs.upload_url }}
           asset_path:
-            "python-aiohttp-retry-${{ steps.version.outputs.version }}-${{ matrix.architecture }}.pkg.tar.xz"
+            "python-aioetherscan-${{ steps.version.outputs.version }}-${{ matrix.architecture }}.pkg.tar.xz"
           asset_name:
-            "dogeos-gnu-python-aiohttp-retry-${{ steps.version.outputs.version }}-${{ matrix.architecture }}.pkg.tar.xz"
+            "dogeos-gnu-python-aioetherscan-${{ steps.version.outputs.version }}-${{ matrix.architecture }}.pkg.tar.xz"
           asset_content_type:
             application/gzip
   msys2_release:
@@ -2123,9 +2123,9 @@ jobs:
             ${{ github.event.release.upload_url }}
             # ${{ steps.create_release.outputs.upload_url }}
           asset_path:
-            "python-aiohttp-retry-${{ steps.version.outputs.version }}-${{ matrix.arch }}.pkg.tar.xz"
+            "python-aioetherscan-${{ steps.version.outputs.version }}-${{ matrix.arch }}.pkg.tar.xz"
           asset_name:
-            "dogeos-windows-python-aiohttp-retry-${{ steps.version.outputs.version }}-${{ matrix.arch }}.pkg.tar.xz"
+            "dogeos-windows-python-aioetherscan-${{ steps.version.outputs.version }}-${{ matrix.arch }}.pkg.tar.xz"
           asset_content_type:
             application/gzip
 

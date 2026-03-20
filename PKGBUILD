@@ -98,7 +98,7 @@ _commit="23dbbba312f7938b2d6250af4da4d9b7276788f1"
 _asyncio_throttle_pkgver="1.0.1"
 _aiohttp_retry_pkgver="2.8.3"
 _py_pkgver="3.9"
-pkgrel=12
+pkgrel=13
 _pkgdesc=(
   'Etherscan API async Python wrapper.'
 )
