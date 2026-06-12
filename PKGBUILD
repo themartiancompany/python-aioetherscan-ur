@@ -90,8 +90,8 @@ _pyver="$(
   true)"
 _pymajver="${_pyver%.*}"
 _pyminver="${_pymajver#*.}"
-_pynextver="${_pymajver%.*}.$(( \
-  ${_pyminver} + 1))"
+_pynextver="${_pymajver%.*}.$((
+  "${_pyminver}" + 1))"
 _pkg=aioetherscan
 pkgbase="${_py}-${_pkg}"
 pkgname=(
@@ -131,8 +131,8 @@ depends=()
 _py_depends="${_py}"
 if [[ "${_pyver}" != "" ]]; then
   depends+=(
-  "${_py}>=${_pymajver}"
-  "${_py}<${_pynextver}"
+    "${_py}>=${_pymajver}"
+    "${_py}<${_pynextver}"
   )
 elif [[ "${_pyver}" == "" ]]; then
   depends+=(
